@@ -661,7 +661,7 @@ class Hooks implements
 
 		// If the user is not an IP and this is not a null edit,
 		// test for them reaching a congratulatory threshold
-		$thresholds = [ 1, 10, 100, 1000, 10000, 100000, 1000000, 10000000 ];
+		$thresholds = [ 10, 100, 1000, 10000, 100000, 1000000, 10000000 ];
 		if ( $userIdentity->isRegistered() ) {
 			$thresholdCount = self::getEditCount( $userIdentity );
 			if ( in_array( $thresholdCount, $thresholds ) ) {
